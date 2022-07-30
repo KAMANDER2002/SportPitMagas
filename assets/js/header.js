@@ -21,10 +21,16 @@ window.addEventListener('scroll',() =>
    if(window.pageYOffset>headerHeight)
    {
     header.classList.add('header-fixed');
+     $('#content').css({
+       'paddingTop': header.offsetHeight +'px' // делаем отступ у body, равный высоте шапки
+    });
    }
    else 
    {
     header.classList.remove('header-fixed');
+     $('#content').css({
+     'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
+    })
    }
 });
 
