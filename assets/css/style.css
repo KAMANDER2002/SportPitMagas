@@ -28,14 +28,15 @@ body
 }
 footer
 {
-	height: 200px;
+	height: 150px;
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	align-items: center;
 	background-color: #04c2c9;
-	font-size: 20pt;
+	font-size: 14pt;
 }
+/*-----------------------------------------------------------------------------------------*/
 /*------------- HEADER  -----------*/
 nav
 {
@@ -197,7 +198,7 @@ nav
 	opacity: 0.8;
 	z-index:3;
 }
-
+/*-----------------------------------------------------------------------------------------*/
 /*---------TOVARS----------*/
 #content
 {
@@ -401,7 +402,7 @@ nav
 	padding: 0px 0px;
 }
 }
-/*---------------------------*/
+/*-----------------------------------------------------------------------------------------*/
 /*-------------ABOUT-US-------------------*/
 .about-us-container
 {
@@ -676,3 +677,132 @@ nav
 		font-size: 10pt;
 	}
 }
+/*-----------------------------------------------------------------------------------------*/
+/*----------HomePage-------------*/
+.slider
+{
+	overflow: hidden;
+	max-width: 95%;
+	margin: 20px auto;
+	border: solid 1px black;
+}
+.slider-body
+{
+	display: flex;
+	transition: all 2s;
+}
+@media screen and (max-width: 600px)
+{
+	.slider 
+	{
+		max-width: 100%;
+	}
+}
+
+.blog
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 100px 0;
+}
+.blog-item
+{
+	min-width: 250px;
+	max-width: 300px;
+	min-height: 500px;
+	max-height: 550px;
+	display: flex;
+	flex-direction: column;
+}
+.blog-item .blog-card-header
+{
+	border-radius: 10% 20% 0 0;
+	width: 100%;
+	height: 250px;
+	margin: 0;
+}
+.blog-item .blog-card-body
+{
+	border: solid 2px white;
+	border-top: none;
+	margin: 0;
+	padding: 10px;
+}
+.blog-item .blog-card-footer
+{
+	border: solid 2px white;
+	border-top: none;
+	min-height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.blog-item .blog-card-title
+{
+	border: solid 2px white;
+	font-size: 25pt;
+}
+/*-----------------------------------------------------------------------------------------*/
+/*----Contacts----*/
+.contacts
+{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.contacts .contacts-links
+{
+	font-size: 30pt;
+}
+.contacts .contacts-links .adres
+{
+	font-size: 20pt;
+}
+.contacts .social-links
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.contacts .social-links img
+{
+ width: 150px;
+ height: auto;
+ border-radius: 30%;
+}
+.contacts .social-links .youtube
+{
+	width: 200px;
+}
+.contacts img {
+      width: 50%;
+      height: 500px;
+     }
+   @media screen and (max-width: 900px)
+   { 
+       .contacts{
+       	flex-direction: column;
+       }
+       .contacts .contacts-links
+       {
+       	font-size: 15pt;
+       }
+       .contacts img
+       {
+       	width: 100%;
+       height: 300px;
+       }
+            
+       .contacts .social-links img
+			 {
+			 width: 80px;
+			 height: auto;
+			 border-radius: 30%;
+		   }
+		   .contacts .social-links .youtube
+		   {
+		   	width: 100px;
+		   }
+  }
