@@ -21,7 +21,7 @@
 						<li><a href="#/about/"  onclick="route('#/about/')">О нас</a></li>
 						<li><a href="#/tovars/" class="tovar-link" onclick="route('#/tovars/')">Каталог товаров</a></li>
 						<li><a href="#/contacts/"  onclick="route('#/contacts/')">Контакты</a></li>
-						<li><a href="#/autorization/"  onclick="route('#/autorization/')">Войти</a></li>
+						<li><a style="cursor: pointer;" onclick="popupUp()">Войти</a></li>
 					</ul>
 			</div>
 		</nav>
@@ -31,6 +31,26 @@
 		<footer>
 			@Спортпит-компани Все права защищены. Ознакомится с асортиментом продукции вы можете в разделе каталог
 		</footer>
+	</div>
+	<div id ="popup" class="d-none">
+           <div class="popup-body">
+           	<a style="cursor:pointer;" onclick="popupDown()" class="popup-close">X</a>
+           	<div class="popup-content">
+           		    <div class="title">
+           		    	<h2>войти в систему</h2>
+           		    </div>
+           		    <div class="inputs">
+           			<input type="text">
+           			<input type="text">
+           			</div>
+           			<div class="buttons">
+                    <a href="#" class="button">Авторизоваться</a>
+                    </div>
+                    <div class="reg-href">
+                    	нет акаунта? <a href="#">Создать новый акаунт</a>....
+                    </div>
+           	</div>
+           </div>
 	</div>
 	<script src="/assets/js/index.js"></script>
 	<script src="/assets/js/header.js"></script>

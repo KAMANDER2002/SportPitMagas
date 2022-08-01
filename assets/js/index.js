@@ -80,6 +80,15 @@ const handleLocation = async (routes) => {
   		break;
   }
 };
+  const popup_aut = document.querySelector('#popup');
+  function popupUp()
+  {
+  	popup_aut.classList.add('popup-autorization');
+  }
+  function popupDown()
+  {
+  	popup_aut.classList.remove('popup-autorization');
+  }
 /*
 const tovar = document.querySelectorAll('#tovar-item');
 if(tovar != null){
